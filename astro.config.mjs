@@ -6,17 +6,21 @@ export default defineConfig({
 	site: 'https://ygojson.github.io',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'YGOJSON',
+			logo: {
+				src: './src/assets/logo.svg'
+			},
+			favicon: '/favicon.svg',
+			editLink: {
+				baseUrl: 'https://github.com/ygojson/ygojson.github.io/edit/main/'
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/ygojson',
 			},
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					autogenerate: { directory: 'guides'}
 				},
 				{
 					label: 'Reference',
