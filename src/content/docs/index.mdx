@@ -1,36 +1,46 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: YGOJSON
+description: |
+  YGOJSON is an open-source project aiming to create a catalog for the Yu-Gi-Oh card game in portable formats.
 template: splash
+editUrl: false
+banner:
+  content: |
+    As we are on an initial state of development, we are open to onboard any collaborator.
+    <a href="https://github.com/ygojson/ygojson.github.io/issues/new">You are welcome open an issue to get in touch!</a>
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Portable formats for Yu-Gi-Oh! Card game data
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/logo.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Getting started
+      link: /guides/getting-started/
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Reference
+      link: /reference/data-models/
+      variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Project Goals
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Portable files" icon="document">
+    Our main goal is to provide portable files to be dropped and use by any project.
+    First we will focus on JSON, but we won't stop there!
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+  <Card title="Community-driven" icon="pencil">
+    We want to provide a great value to the community.
+    Thus, we want to listen what you want to make a great Open Source product for your needs!
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+  <Card title="Well-documented" icon="open-book">
+    As we aim to create a project that is used by the community.
+    For that, we will focus equally on the quality of our documentation and reference.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Open Source" icon="approve-check">
+    We will keep this project Open Source.
+    Files, scripts, documentation: you name it and it will be accessible for the community.
 	</Card>
 </CardGrid>
