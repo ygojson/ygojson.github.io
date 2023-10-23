@@ -22,4 +22,4 @@ Collaborators can contribute to the discussion about:
 - Providers to be used and data to be fetched
 - New files/formats to be delivered
 
-[You are welcome open an issue to get in touch!](https://github.com/ygojson/ygojson.github.io/issues/new).
+[You are welcome to open an issue to get in touch!](https://github.com/ygojson/ygojson.github.io/issues/new)
