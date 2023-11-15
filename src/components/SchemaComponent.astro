@@ -1,0 +1,19 @@
+---
+import MarkdownContent from '@astrojs/starlight/components/MarkdownContent.astro';
+import type { JSONSchema7Definition, JSONSchema7 } from 'json-schema'
+
+interface Props {
+  propertyValue?: string,
+  schema: JSONSchema7
+}
+
+const { propertyValue, schema } = Astro.props
+---
+{propertyValue && <h2 id={propertyValue}>{propertyValue}</h2>}
+
+<p>{schema.description}</p>
+
+{
+  schema.properties && Object.entries(schema.properties)
+    .map(([key, value]) => <Astro.self propertyValue={key}, schema={value as JSONSchema7}/>)
+}
